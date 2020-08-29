@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'final.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'health-circle',
+        'USER': 'qnghtatbjrithk',
+        'PASSWORD': 'af260c16cc7ea2e6c4c8773be6fdac791d504734014b6d79c909f7523d1ab8f1',
+        'HOST': 'ec2-54-88-130-244.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
